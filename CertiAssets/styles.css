@@ -1,0 +1,211 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    border-radius: 20px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.788); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+   
+    margin: auto;
+    padding: 0;
+    border-radius: var(--radi);
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+    
+  }
+  
+ 
+  :root
+  {
+    --radi:12px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 15px;
+    background-color: #00eeff;
+    border-radius: var(--radi) var(--radi) 0px 0px ;
+    
+  }
+  .modal-header h1{
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .modal-body 
+  {padding: 2px 16px;}
+
+  .certiDetails  {
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.497);
+  }
+
+  .key
+  {
+    
+    width: 30%;
+    padding: 5px;
+    padding-left:20px ;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: rgb(207, 207, 207);
+    margin: 1px;
+    /* border-radius: 5px 0px 0px 0px; */
+
+  }
+  .value
+  {
+    width: 68%;
+    padding: 5px;
+    padding-top: 11px;
+    padding-left:20px ;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: rgb(207, 207, 207);
+    margin: 1px;
+    /* border-radius: 0px 5px 0px 0px; */
+  }
+
+  .keyh
+  {
+    background-color: rgb(223, 223, 223);
+  }
+
+  .valueh
+  {
+    background-color: rgb(223, 223, 223);
+  }
+  .btn_certi
+  {
+    margin-left: 40%;
+    margin-bottom: 40px;
+  }
+  .btn_certi:hover
+  {
+    color: #000;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+  }
+   
+   @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @media only screen and (max-width: 750px) 
+  {
+    .certiDetails
+    {
+      
+      width: 90%;
+    }
+    .modal-content
+    {
+      width: 90%;
+    }
+    .key{
+      font-size: 20px;
+      padding: 5px;
+      padding-left: 10px;
+    }
+    .value
+    {
+      padding-left: 5px;
+      font-size: 16px;
+      
+    }
+    #certiNo
+    {
+      font-size: 13px;
+    }
+    .btn_certi
+    {
+      margin-left: 30%;
+    }
+    #cover-spin::after {
+      content:'';
+      display:block;
+      position:absolute;
+      left:20px;
+      top:100px;
+    }
+  }
+  
+    
+
+
+  #cover-spin {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index:9999;
+    display:none;
+}
+
+@-webkit-keyframes spin {
+	from {-webkit-transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:200px;height:200px;
+    border-style:solid;
+    border-color:rgb(0, 145, 255);
+    border-top-color:transparent;
+    border-width: 20px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}
