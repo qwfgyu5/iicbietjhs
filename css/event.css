@@ -1,0 +1,153 @@
+.current_event
+{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 150px;
+    background-color: rgba(0, 0, 0, 0.345);
+    padding-bottom: 10%;
+}
+
+
+
+.event_poster
+{
+    width: 40%;
+}
+.event_description
+{
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+@media only screen and (max-width: 600px) 
+{
+    .current_event
+    {
+      display: inline;
+      
+
+    }
+    .event_poster
+    {
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 100px;
+    }
+    .event_description
+    {
+        margin-left: 10%;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    }
+  }
+.event_poster_img
+{
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.c_event_title
+{
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+
+}
+.c_event_about
+{
+    width: 100%;
+    text-align: justify;
+    
+    font-size: 16px;
+    color: black;
+}
+.c_event_date, .c_event_expert
+{
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+}
+.c_event_button
+{
+    margin-top: 10px;
+    width: 25%;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+    background-color: orange;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+.event_img
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.event_desc
+{
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.event_title 
+{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+.event_about 
+{
+    width: 100%;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    color: black;
+    
+}
+.event_expert
+{
+    padding-top: 10px;
+}
+.event_date, .event_expert
+{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+.event_button 
+{
+    margin: 12px;
+    width: 25%;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+    background-color: orange;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+.event_button:hover
+{
+    color: white;
+}
+
